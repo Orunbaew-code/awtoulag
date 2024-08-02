@@ -1,0 +1,432 @@
+
+header {
+    background-color: #f0f0f0;  /* Light gray background */
+    padding: 20px 0;  /* Padding around the header content */
+  }
+  
+  .container_header {
+    display: flex;  /* Arrange elements horizontally */
+    justify-content: space-between;  /* Distribute space evenly between logo and navigation */
+    align-items: center;  /* Vertically align logo and navigation */
+    width: 90%;  /* Limit container width to 90% */
+    margin: 0 auto;  /* Center the container horizontally */
+  }
+  
+  .logo {
+    width: auto;  /* Adjust logo width as needed */
+    height: 50px;  /* Maintain aspect ratio of the logo */
+  }
+  
+  header nav {
+    display: flex;  /* Arrange navigation links horizontally */
+    flex-grow: 1;  /* Allow navigation to fill remaining space */
+    justify-content: flex-end;  /* Align navigation links to the right */
+  }
+  
+  header nav ul {
+    list-style: none;  /* Remove default bullet points */
+    padding: 0;  /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    display: flex;  /* Arrange navigation links horizontally */
+  }
+  
+  header nav li {
+    margin-right: 30px;  /* Spacing between navigation links */
+  }
+  
+  header nav a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #333;  /* Font color for navigation links */
+    font-weight: bold;  /* Make navigation links bold */
+  }
+  
+  header nav a:hover {
+    color: #33E;  /* Change link color on hover */
+  }
+  
+  /* Dropdown menu styles (optional) */
+  header nav li ul {
+    background-color: #fff;  /* White background for dropdown menus */
+    display: none;  /* Hide dropdown menus initially */
+    position: absolute;  /* Required for z-index to work */
+    z-index: 10;  /* Higher value to stack on top */
+  }
+  
+  header nav li:hover ul {
+    display: block;  /* Show dropdown menus on hover */
+  }
+  
+  header nav li ul li {
+    margin: 0;  /* Remove margin from dropdown list items */
+    padding: 10px;  /* Add padding to dropdown list items */
+  }
+
+  
+  /* News & Events section styles */
+.news-events {
+  margin-bottom: 50px;  /* Spacing after the news & events section */
+}
+.news-events_div{
+  display: flex;
+}
+
+.news-events h2 {
+  text-align: center;  /* Center the main heading */
+  font-size: 2em;  /* Adjust heading size as needed */
+  margin-bottom: 30px;  /* Spacing between heading and content */
+}
+
+.news-items,
+.events {
+  display: flex;  /* Arrange news & events sections side-by-side */
+  flex-direction: column;  /* Stack items vertically within each section */
+  width: 45%;  /* Make each section 50% width */
+  padding: 20px;  /* Padding for content within each section */
+  margin-bottom: 30px;  /* Spacing between sections */
+  border: 1px solid #ddd;  /* Optional: Add a subtle border */
+  border-radius: 5px;  /* Optional: Add rounded corners */
+}
+
+.news-items h3,
+.events h3 {
+  font-size: 1.5em;  /* Subheading size */
+  margin-bottom: 15px;  /* Spacing between subheading and list */
+}
+
+.news-items ul,
+.events ul {
+  list-style: none;  /* Remove default bullet points */
+  padding: 0;  /* Remove default padding */
+  margin: 0;  /* Remove default margin */
+}
+
+.news-items li,
+.events li {
+  margin-bottom: 15px;  /* Spacing between news/event items */
+}
+
+.news-items a,
+.events a {
+  color: #007bff;  /* Blue color for news/event titles */
+  text-decoration: none;  /* Remove underline from titles */
+  font-weight: bold;  /* Make titles bold */
+}
+
+.news-items a:hover,
+.events a:hover {
+  color: #0069d9;  /* Change title color on hover (darker blue) */
+}
+
+.news-items p,
+.events p {
+  font-size: 1em;  /* Adjust paragraph text size */
+  line-height: 1.5;  /* Adjust line spacing for readability */
+}
+
+/* Responsive adjustments (optional):
+On smaller screens, you can stack the news & events sections vertically instead of side-by-side. 
+Uncomment the following media query to enable this behavior. */
+
+@media (max-width: 768px) {
+  .news-items,
+  .events {
+    width: 100%;  /* Make each section 100% width on smaller screens */
+    margin-bottom: 0;  /* Remove bottom margin on smaller screens */
+  }
+}
+.view_all{
+  text-align: center;
+}
+
+.services body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.services h1, h2 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.services p {
+  margin-bottom: 1em;
+}
+
+/* Style the actions div */
+.actions {
+  display: flex;
+  margin-bottom: 20px; /* Add some space after the actions */
+}
+
+.actions a {
+  margin-right: 50px;
+  padding: 10px 15px; /* Add padding for buttons */
+  border: 1px solid #ddd; /* Add a thin border */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  background-color: #007bff; /* Text color */
+  color: #FFF;
+}
+
+.actions a:hover {
+  background-color: #0069d9; /* Change background on hover */
+}
+
+/* General form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Success/Error message styles */
+.success,
+.error {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #468847;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ddd;
+}
+
+form a{
+  color: #FFF;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form a:hover{
+  background-color: #0069d9;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+.faq-list {
+  margin-bottom: 40px;
+}
+
+.faq-list h2 {
+  margin-bottom: 15px;
+}
+
+.faq-list details {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faq-list summary {
+  font-weight: bold;
+}
+
+.faq-list details:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.faq-list details > summary:focus {
+  outline: none;
+}
+
+.faq-list details[open] {
+  background-color: #eee;
+}
+
+.faq-list p {
+  margin-top: 0;
+}
+
+
+.faq_main a{
+  color: #FFF;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.job-filters {
+  margin-bottom: 40px;
+}
+
+.job-filters form {
+  display: flex;
+  align-items: center;
+}
+
+.job-filters .filter-group {
+  margin-right: 10px;
+}
+
+.job-filters label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.job-filters select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.job-filters button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-filters button:hover {
+  background-color: #0069d9;
+}
+
+.job-listings {
+  margin-bottom: 40px;
+}
+
+.job-listings h2 {
+  margin-bottom: 15px;
+}
+
+.job-listing {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.job-listing h3 {
+  margin-bottom: 10px;
+}
+
+.job-listing p {
+  margin-bottom: 15px;
+}
+
+.job-listing ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.job-listing li {
+  margin-bottom: 5px;
+}
+
+
+.job_qualifications{
+  margin-left: 30px;
+}
